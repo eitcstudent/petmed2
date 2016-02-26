@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container">
+   
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#collapse">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            
+    <div class="collapse navbar-collapse" id="collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="index.htm">Home</a></li>
+            <li class="dropdown"><a href="#" data-toggle="dropdown">About<span class="caret"</a>
+                <ul class="dropdown-menu">
+                <li><a href="#">Dr. Winthrop</a></li>
+                 <li><a href="#">Dr. Chase</a></li>
+                  <li><a href="#">Dr. Sanders</a></li>
+            </ul>
+        </li>
+
+
+            <a href="services.htm">Services</a></li>
+            <li><a href="#">Photo Gallery</a></li>
+            <li class="active">Contact</a></li>  
+        </ul>  
+    </nav>
+
+     <!-- row 1 -->
+    <header="row">
+        <div class="col-lg-6 col-sm-5 col-xs-12">
+            <a href="index.html"><img src="img/logo.png" alt="Wisdom Pets. click for home."></a>
+        </div>
+        <aside class="col-lg-6 col-sm-7">
+            <img src="img/animals(1).jpg" alt="group of pets">
+        </aside>
+    </header>
+
+    <section class="row">
+
+        <article>
+            <h1> Contact Us</h1>
+                <form id ="survey" name="survey" onSubmit="checkAddress('email');">
+                    <br/><br/>
+                    <label for="firstname"> First name: </label><br/>
+                    <input name="firstname" id="firstname"/>
+                    <br/><br/>
+                    
+                    <br/><br/>
+                    <label for="lastname"> Last name: </label><br/>
+                    <input name="Lastname" id="Lastname"/>
+                    <br/><br/>
+
+                    <br/><br/>
+                    <label for="email"> E-mail (Required): </label><br/>
+                    <input name="email" id="email"/>
+                    <br/><br/>
+
+                    <br/><br/>
+                    <label for="zip"> Postal Code: </label><br/>
+                    <input name="zip" id="zip" onBlur="fillCity();"/>
+                    <br/><br/>
+                    
+                    <br/><br/>
+                    <label for="city"> City: </label><br/>
+                    <input name="city" id="city"/>
+                    <br/><br/>
+
+                    <br/><br/>
+                    <label for="commment"> Comment: </label><br/>
+                    <input name="comment" id="comment"/>
+                    <br/><br/>
+
+                    <input type="submit" value="submit" />
+                </form>
+        </article>
+
+    </section>    
+        <aside>
+             <br><br>
+             <ol class="breadcrumb">
+          <li><a href="index.htm">Home</a></li>
+          <li><a href="services.htm">Services</a></li>
+          <li class="active">Vaccinations</li>
+        </ol>
+            <br><br>
+            <p id="petMed"> Thank you for contacting us about Pet Medicine.<a href=
+                "javascript:void(0);" onClick="expandPet();">Click for more contact info.</a>
+            </p>
+        </aside>
+
+     <footer class="row">
+         <p>This not a real veterinary medicine site, and is not meant to diagnose or offer treatment. Please see your veterinarian for all matters related to your pet's health.
+         </p>
+         <p>Wisdom Pet Medicine is a training brand owned by lynda.com.</p>
+    </footer>
+
+</div> <!-- end container -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+     <script src="js/jquery-2.2.0.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/myscript.js"></script>
+
+</body>
+</html>
